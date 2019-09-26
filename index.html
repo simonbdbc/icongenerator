@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://unpkg.com/cropperjs/dist/cropper.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <main>
+        <div class="preview">
+            <div id="icon_preview">
+                <img id="" src="" alt="">
+            </div>
+            <img class="logo" src="./assets/icon.png" alt="itAkademy">
+        </div>
+        <div class="setup">
+            <div class="import_image">
+                <span>Ajouter une image</span>
+                <label for="image_uploads" class="image_uploads">
+                    <i class="fas fa-file-upload"></i>
+                </label>
+                <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png">
+            </div>
+            <div class="dimension_image">
+                <span>Dimension</span>
+                <input type="range" name="resolution" id="dim_resolution">
+                <span>H</span>
+                <input type="number" name="hauteur" id="dim_hauteur">
+                <span>L</span>
+                <input type="number" name="largeur" id="dim_largeur">
+            </div>
+            <div class="angle_image">
+                <label for="angle_droit">Droit</label>
+                <input type="radio" name="angle" id="angle_droit">
+                <label for="angle_arrondi">Arrondi</label>
+                <input type="radio" name="angle" id="angle_arrondi">
+                <label for="angle_rond">Rond</label>
+                <input type="radio" name="angle" id="angle_rond">
+            </div>
+            <div class="fond_image">
+
+            </div>
+            <div class="save_image">
+                <input id="save_image" type=button value="Valider">
+            </div>
+        </div>
+    </main>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="https://unpkg.com/cropperjs"></script>
+    <script src="./renderer.js"></script>
+</body>
+
+</html>
